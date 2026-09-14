@@ -26,6 +26,15 @@
     <a href="index.html" style="color:#00ff99;">← Back Home</a>
   </p>
 </div>
+<script src="script.js"></script>
 
+<script>
+function loginUser() {
+  const email = document.querySelectorAll("input")[0].value;
+  const password = document.querySelectorAll("input")[1].value;
+
+  login(email, password);
+}
+</script>
 </body>
 </html>
