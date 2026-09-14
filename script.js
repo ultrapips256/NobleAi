@@ -17,7 +17,7 @@ function login(email, password) {
   }
 
   if (user.email === email && user.password === password) {
-    window.location.href = "payment.html";
+    window.location.href = "services.html";
   } else {
     alert("Wrong email or password.");
   }
