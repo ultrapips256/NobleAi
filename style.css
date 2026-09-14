@@ -107,3 +107,27 @@ footer{
   border-top:1px solid #00ff99;
   color:#cccccc;
 }
+.why, .pricing, .faq{
+  padding:40px 20px;
+}
+
+.why h2, .pricing h2, .faq h2{
+  text-align:center;
+  color:#00ff99;
+  margin-bottom:20px;
+}
+
+.card{
+  background:#111;
+  border:1px solid #00ff99;
+  border-radius:16px;
+  padding:18px;
+  margin-bottom:15px;
+  box-shadow:0 0 12px rgba(0,255,153,0.15);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 0 18px rgba(0,255,153,0.35);
+}
