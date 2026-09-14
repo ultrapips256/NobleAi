@@ -53,6 +53,13 @@
     <a href="https://wa.me/256765560729" class="btn green">WhatsApp Support</a>
   </div>
 </section>
+<script>
+const user = localStorage.getItem("nobleaiUser");
 
+if (!user) {
+  alert("Please login first.");
+  window.location.href = "login.html";
+}
+</script>
 </body>
 </html>
