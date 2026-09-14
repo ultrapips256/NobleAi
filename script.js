@@ -1,28 +1,24 @@
-// NobleAI v1.0 Animations
+// Save new account
+function signup(name, email, password) {
+  localStorage.setItem("nobleaiUser", JSON.stringify({
+    name,
+    email,
+    password
+  }));
+}
 
-document.addEventListener("DOMContentLoaded", () => {
-  const cards = document.querySelectorAll(".card");
+// Check login
+function login(email, password) {
+  const user = JSON.parse(localStorage.getItem("nobleaiUser"));
 
-  cards.forEach((card, index) => {
-    card.style.opacity = "0";
-    card.style.transform = "translateY(20px)";
+  if (!user) {
+    alert("No account found. Please create an account first.");
+    return false;
+  }
 
-    setTimeout(() => {
-      card.style.transition = "0.6s ease";
-      card.style.opacity = "1";
-      card.style.transform = "translateY(0)";
-    }, index * 150);
-  });
-
-  const buttons = document.querySelectorAll(".btn");
-
-  buttons.forEach(btn => {
-    btn.addEventListener("mouseenter", () => {
-      btn.style.transform = "scale(1.05)";
-    });
-
-    btn.addEventListener("mouseleave", () => {
-      btn.style.transform = "scale(1)";
-    });
-  });
-});
+  if (user.email === email && user.password === password) {
+    window.location.href = "payment.html";
+  } else {
+    alert("Wrong email or password.");
+  }
+}
