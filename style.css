@@ -243,3 +243,25 @@ footer{
   from{text-shadow:0 0 10px #00ff99;}
   to{text-shadow:0 0 30px #00ff99;}
 }
+.hero{
+  position:relative;
+  overflow:hidden;
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 40px,
+    rgba(0,255,153,0.08) 41px
+  );
+  animation:gridMove 8s linear infinite;
+}
+
+@keyframes gridMove{
+  from{transform:translateX(0);}
+  to{transform:translateX(40px);}
+}
