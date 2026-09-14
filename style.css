@@ -44,6 +44,9 @@ nav a:hover{
 }
 
 .hero{
+  position:relative;
+  z-index:1;
+}
   text-align:center;
   padding:60px 20px;
   background:linear-gradient(180deg,#000,#083d2b);
