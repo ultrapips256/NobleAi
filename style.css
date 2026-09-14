@@ -275,3 +275,16 @@ footer{
   from{transform:translateX(0);}
   to{transform:translateX(40px);}
 }
+.hero::after{
+  content:"";
+  position:absolute;
+  width:220px;
+  height:220px;
+  background:#00ff99;
+  border-radius:50%;
+  filter:blur(120px);
+  opacity:0.15;
+  top:40px;
+  left:50%;
+  transform:translateX(-50%);
+}
