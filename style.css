@@ -105,7 +105,18 @@ nav a{
   gap:12px;
   box-shadow:0 0 12px rgba(0,255,153,.15);
 }
+.card h3{
+  color:white;
+  font-size:28px;
+  margin:0;
+}
 
+.card p{
+  color:#00ff99;
+  font-size:24px;
+  font-weight:bold;
+  margin:0;
+}
 footer{
   text-align:center;
   padding:30px 20px;
