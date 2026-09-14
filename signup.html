@@ -29,6 +29,18 @@
     <a href="index.html" style="color:#00ff99;">← Back Home</a>
   </p>
 </div>
+<script src="script.js"></script>
 
+<script>
+function createAccount() {
+  const name = document.querySelectorAll("input")[0].value;
+  const email = document.querySelectorAll("input")[1].value;
+  const password = document.querySelectorAll("input")[3].value;
+
+  signup(name, email, password);
+  alert("Account created successfully!");
+  window.location.href = "login.html";
+}
+</script>
 </body>
 </html>
